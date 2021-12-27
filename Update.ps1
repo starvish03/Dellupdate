@@ -8,4 +8,4 @@ Invoke-WebRequest -Uri $sourcemsg -OutFile $destinationmsg
 $sourcebatch = 'https://raw.githubusercontent.com/khalilhasanzade/Dellupdate/main/Dell_update.bat'
 $destinationbatch = 'C:\DellUpdate\Dell_update.bat'
 Invoke-WebRequest -Uri $sourcebatch -OutFile $destinationbatch
-PowerShell.exe -windowstyle hidden -File  "C:\DellUpdate\Dell.ps1"
+PowerShell.exe -windowstyle hidden  -ExecutionPolicy Bypass -File  "C:\DellUpdate\Dell.ps1"
